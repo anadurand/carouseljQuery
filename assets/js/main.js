@@ -11,18 +11,9 @@ $(document).ready(function(){
     moveImg(1);
   }
   circulo.on("click",function(){
-    switch (this.id) {
-      case "firstImg":  showImg(0);
-        break;
-      case "secondImg":  showImg(1);
-        break;
-      case "thirdImg":  showImg(2);
-        break;
-      case "fourthImg":  showImg(3);
-        break;
-      case "fifthImg":  showImg(4);
-        break;
-    }
+    //console.log($(this).attr("data-id"));
+    showImg($(this).attr("data-id"));
+    clearInterval(autoSlide);
   });
   $("#arrowLeft").on("click", function(){
     clearInterval(autoSlide);
