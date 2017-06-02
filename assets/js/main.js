@@ -18,7 +18,7 @@ $(document).ready(function(){
         break;
       case "thirdImg":  showImg(2);
         break;
-      case "forthImg":  showImg(3);
+      case "fourthImg":  showImg(3);
         break;
       case "fifthImg":  showImg(4);
         break;
