@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 90%;
+  margin: 2% auto;
+  border: 1px solid blue;
+  min-height: 600px;
+  text-align: center;
+  position: relative;
+}
+.imagenes{
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+.imagenes img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.arrow-left, .arrow-right{
+  position: absolute;
+  top: 50%;
+}
+.arrow-left{
+  left: 15%;
+}
+.arrow-right{
+  right: 15.5%;
+}
+.arrow-right:hover, .arrow-left:hover{
+  cursor: pointer;
+}
+.circle{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid grey;
+  border-radius: 25px;
+  margin: 20px 10px;
+}
+.circle:hover, .circle-select{
+  background-color: grey;
+  cursor: pointer;
+}
